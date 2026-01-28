@@ -206,7 +206,7 @@ def main():
         Task("Log Wiper", StopperManager.cleanup_logs, LOG_FILE, args.delay, args.delay/2)
     ]
 
-    print(f"🚀 Scheduler started at {time.strftime('%H:%M:%S')}")
+    print(f"Scheduler started at {time.strftime('%H:%M:%S')}")
     
     try:
         while True:
