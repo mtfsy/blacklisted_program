@@ -18,7 +18,9 @@ stopper.exe --interval-svc 180 --interval-exe 180 --delay 86400
 ```
 Argument,Description,Default
 --interval-svc,Frequency (in seconds) to check and stop listed Services.,180
+
 --interval-exe,Frequency (in seconds) to check and kill listed Executables.,180
+
 --delay,Frequency (in seconds) to wipe/clear the activity_log.txt.,86400
 
 📂 Configuration
