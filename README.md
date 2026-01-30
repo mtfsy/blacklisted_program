@@ -1,4 +1,3 @@
-# Stopper.exe - Windows Annoyance Stopper
 
 **Stopper.exe** is a lightweight system utility designed to automatically monitor and terminate unwanted background tasks, telemetry services, and forced update programs on Windows.
 
