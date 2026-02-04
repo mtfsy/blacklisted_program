@@ -34,8 +34,7 @@ jobs:
           # Create a clean folder for the final zip
           mkdir Package
           # Copy the EXE from the dist folder
-          copy dist\MyStopper.exe Package\
-          copy configs\program_name.txt Package\
+          copy dist\MyStopper.exe configs\program_name.txt Package\
           # Copy the rest of the repo (excluding build artifacts and .git)
           # xcopy . Package /E /X /Y /Exclude:exclude-list.txt
         shell: cmd
