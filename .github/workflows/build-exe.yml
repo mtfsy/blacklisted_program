@@ -2,7 +2,7 @@ name: Build and Package EXE
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   workflow_dispatch: # Allows manual triggering
 
 jobs:

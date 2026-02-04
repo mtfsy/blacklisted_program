@@ -22,7 +22,7 @@ class TestCheckReq(unittest.TestCase):
         mock_fs = MagicMock()
         mock_fs.exists.return_value = False
         Task.check_req("test.txt", fs_tool=mock_fs) # Just pass the mock in!
-    """
+
     @patch('subprocess.run')
     @patch('os.name', 'nt')
     def test_kill_program_windows_success(self, mock_run):
@@ -36,7 +36,7 @@ class TestCheckReq(unittest.TestCase):
             ['taskkill', '/f', '/im', 'notepad.exe'],
             capture_output=True, text=True
         )
-    """
+    
 
 if __name__ == '__main__':
     unittest.main()
