@@ -27,7 +27,7 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --noconsole --onefile --name "Stopper" stopper.py
+          pyinstaller --noconsole --onefile --name "Stopper" main.py
 
       - name: Prepare Package Folder
         run: |
