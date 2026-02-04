@@ -37,7 +37,7 @@ jobs:
           copy dist\MyStopper.exe Package\
           copy configs\program_name.txt Package\
           # Copy the rest of the repo (excluding build artifacts and .git)
-          #xcopy . Package /E /X /Y /Exclude:exclude-list.txt
+          # xcopy . Package /E /X /Y /Exclude:exclude-list.txt
         shell: cmd
 
       - name: Create Zip Archive
