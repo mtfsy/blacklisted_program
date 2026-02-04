@@ -34,7 +34,7 @@ jobs:
           # Create a clean folder for the final zip
           mkdir Package
           # Copy the EXE from the dist folder
-          copy dist\MyStopper.exe Package\
+          copy dist\Stopper.exe Package\
           copy configs\program_name.txt Package\
         shell: cmd
 
@@ -48,3 +48,13 @@ jobs:
         with:
           name: Stopper-Full-Package
           path: Stopper_Bundle.zip
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Stopper_Bundle.zip
+          name: Release ${{ github.ref_name }}
+          body: |
+            Automated release for version ${{ github.ref_name }}.
+          draft: false
+          prerelease: false
